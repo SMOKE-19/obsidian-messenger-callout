@@ -1,0 +1,33 @@
+{
+  "name": "obsidian-messenger-callout",
+  "version": "0.1.0",
+  "description": "Render and lint messenger callouts with YAML-defined parser profiles.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "messenger",
+    "callout",
+    "yaml",
+    "lint"
+  ],
+  "author": "SMOKE-19",
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@types/node": "^20.11.30",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.28.1",
+    "obsidian": "^1.5.12",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2"
+  }
+}

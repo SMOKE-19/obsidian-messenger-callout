@@ -1,0 +1,10 @@
+{
+  "id": "messenger-callout",
+  "name": "Messenger Callout",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Render and lint messenger callouts with YAML-defined parser profiles.",
+  "author": "SMOKE-19",
+  "authorUrl": "https://github.com/SMOKE-19",
+  "isDesktopOnly": false
+}

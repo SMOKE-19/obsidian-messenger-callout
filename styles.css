@@ -1,0 +1,50 @@
+.messenger-line-message-header {
+  color: #c8c8c8;
+  font-weight: 400;
+}
+
+.messenger-line-message-body {
+  color: color-mix(
+    in srgb,
+    var(--messenger-sender-color, var(--color-blue)) 82%,
+    black
+  );
+  font-weight: 400;
+}
+
+.messenger-token-sender {
+  color: var(--messenger-sender-color, var(--color-blue));
+  font-weight: 700;
+}
+
+.messenger-token-team {
+  color: inherit;
+  font-weight: 400;
+}
+
+.messenger-token-sender-id,
+.messenger-token-timestamp {
+  color: inherit;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.messenger-token-message {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.messenger-lint-warning,
+.messenger-lint-error {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+}
+
+.messenger-lint-warning {
+  text-decoration-color: var(--color-orange);
+}
+
+.messenger-lint-error {
+  text-decoration-color: var(--color-red);
+}

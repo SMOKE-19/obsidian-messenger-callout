@@ -1,0 +1,38 @@
+app_id: messanger_example
+display_name: Example Messenger
+
+appearance:
+  background_color: '#3a3a3a'
+  title_color: '#ffffff'
+  icon: assets/messenger-tiles.svg
+
+senders: {}
+
+# Rules are evaluated from top to bottom. The first matching rule wins.
+rules:
+  - id: message-header
+    match: regex
+    role: header
+    pattern: '^\[(?<sender>[^\[\]\r\n]+)\]$'
+    style: message-header
+    captures:
+      sender: sender
+
+  - id: message-body
+    match: regex
+    role: body
+    pattern: '^(?!\[)(?<message>\S.*)$'
+    style: message-body
+    captures:
+      message: message
+
+  - id: separator
+    match: regex
+    role: separator
+    pattern: '^\s*$'
+    style: separator
+
+fallback:
+  style: unknown
+  lint: warning
+  message: No parser rule matched this line.

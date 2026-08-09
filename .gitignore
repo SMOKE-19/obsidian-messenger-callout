@@ -1,0 +1,8 @@
+node_modules/
+main.js
+*.map
+dist/
+tests/
+profiles/*
+!profiles/example.yaml
+.DS_Store
